@@ -1,0 +1,10 @@
+{
+  "name": "Chandekar Bakery",
+  "tagline": "Cake, considered from crumb to crest.",
+  "intro": "Chandekar Bakery is a small cake studio building layered, hand-piped celebration cakes — designed around your date, your flavors, and the story you want on the table.",
+  "address": "[Your address here], Pune",
+  "hours": "Tue–Sat, 9am–4pm",
+  "email": "hello@chandekarbakary.com",
+  "phone": "[Your phone number]",
+  "formspree_endpoint": "https://formspree.io/f/YOUR_FORM_ID"
+}
