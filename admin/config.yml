@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site_settings"
+    label: "Site Theme & Design"
+    files:
+      - name: "theme"
+        label: "Theme Settings"
+        file: "data/theme.json"
+        fields:
+          - { label: "Primary Color", name: "primary_color", widget: "color" }
+          - { label: "Secondary Color", name: "secondary_color", widget: "color" }
+          - { label: "Background Color", name: "background_color", widget: "color" }
+          - { label: "Text Color", name: "text_color", widget: "color" }
+          - { label: "Font Family", name: "font_family", widget: "select", options: ["Playfair Display", "Poppins", "Lora", "Montserrat", "Quicksand"] }
+          - { label: "Corner Shape", name: "border_radius", widget: "select", options: [{label: "Sharp", value: "0px"}, {label: "Slightly Rounded", value: "8px"}, {label: "Rounded", value: "16px"}, {label: "Very Rounded", value: "28px"}] }
+
+  - name: "categories"
+    label: "Sections / Categories"
+    folder: "data/categories"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Category Name", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+
+  - name: "products"
+    label: "Cakes & Pastries"
+    folder: "data/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "relation", collection: "categories", search_fields: ["title"], value_field: "{{slug}}", display_fields: ["title"] }
+      - { label: "Price (₹)", name: "price", widget: "number", value_type: "float" }
+      - label: "Festival Offer"
+        name: "offer"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Festival Name", name: "festival", widget: "relation", collection: "festivals", search_fields: ["name"], value_field: "{{slug}}", display_fields: ["name"], required: false }
+          - { label: "Discount %", name: "discount_percent", widget: "number", required: false }
+
+  - name: "festivals"
+    label: "Festivals & Offers"
+    folder: "data/festivals"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Festival Name", name: "name", widget: "string" }
+      - { label: "Start Date", name: "start_date", widget: "datetime" }
+      - { label: "End Date", name: "end_date", widget: "datetime" }
