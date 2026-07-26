@@ -15,6 +15,7 @@ images/cakes/            → put your cake photos here
 .github/workflows/       → auto-deploys the site to GitHub Pages
 ```
 
+
 ## How to add or edit a cake
 
 Open `data/cakes.json`. Each cake looks like this:
