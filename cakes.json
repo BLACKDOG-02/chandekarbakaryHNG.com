@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Fig & Brown Butter",
+    "description": "Brown-butter sponge, roasted fig compote, mascarpone frosting, torn pistachio.",
+    "price": "$86",
+    "serves": "Serves 10–12",
+    "image": "fig-brown-butter.jpg"
+  },
+  {
+    "name": "Salted Honey Citrus",
+    "description": "Blood-orange sponge, whipped honey buttercream, flaked sea salt.",
+    "price": "$78",
+    "serves": "Serves 8–10",
+    "image": "salted-honey-citrus.jpg"
+  },
+  {
+    "name": "Dark Cocoa & Cherry",
+    "description": "Deep cocoa sponge, brandied cherries, whipped dark-chocolate ganache.",
+    "price": "$88",
+    "serves": "Serves 10–12",
+    "image": "dark-cocoa-cherry.jpg"
+  },
+  {
+    "name": "Pistachio Rosewater",
+    "description": "Ground pistachio sponge, rosewater cream, candied petals.",
+    "price": "$92",
+    "serves": "Serves 10–12",
+    "image": "pistachio-rosewater.jpg"
+  },
+  {
+    "name": "Spiced Chai Caramel",
+    "description": "Chai-spiced sponge, salted caramel, cardamom buttercream.",
+    "price": "$82",
+    "serves": "Serves 8–10",
+    "image": "spiced-chai-caramel.jpg"
+  },
+  {
+    "name": "Strawberry Elderflower",
+    "description": "Vanilla bean sponge, roasted strawberry, elderflower cream.",
+    "price": "$80",
+    "serves": "Serves 8–10",
+    "image": "strawberry-elderflower.jpg"
+  }
+]
