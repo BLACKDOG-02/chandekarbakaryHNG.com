@@ -1,8 +1,8 @@
 {
-  "primary_color": "#8a3457",
+  "primary_color": "#5a1833",
   "secondary_color": "#C9A15A",
   "background_color": "#FAF3E6",
   "text_color": "#2A2118",
-  "font_family": "Quicksand",
-  "border_radius": "0px"
+  "font_family": "Playfair Display",
+  "border_radius": "16px"
 }
