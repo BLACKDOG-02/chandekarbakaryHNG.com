@@ -25,6 +25,8 @@ collections:
     folder: "data/categories"
     create: true
     slug: "{{slug}}"
+    format: "json"
+    extension: "json"
     fields:
       - { label: "Category Name", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false }
@@ -35,6 +37,8 @@ collections:
     folder: "data/products"
     create: true
     slug: "{{slug}}"
+    format: "json"
+    extension: "json"
     fields:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Photo", name: "image", widget: "image" }
@@ -54,6 +58,8 @@ collections:
     folder: "data/festivals"
     create: true
     slug: "{{slug}}"
+    format: "json"
+    extension: "json"
     fields:
       - { label: "Festival Name", name: "name", widget: "string" }
       - { label: "Start Date", name: "start_date", widget: "datetime" }
